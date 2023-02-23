@@ -1,0 +1,90 @@
+.btn-primary {
+    background: #EC008C;
+    border: 0;
+    padding: 15px 40px 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #9e0360;
+}
+
+.perpusonline h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: rgb(2,3,129);
+}
+
+.perpusonline p {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.btn-secondary {
+    background: none;
+    /* border: 1px solid #BCD0E5; */
+    /* border: 1px solid #89504E; */
+    border: 1px solid rgb(2,3,129);
+    padding: 15px 40px 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(2,3,129);
+}
+
+.btn-secondary:hover {
+    background: none;
+    border: 1px solid rgb(2,3,129);
+    color: rgb(2,3,129);
+}
+
+/* adjust css */
+  .content .text-one,
+  .content .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+
+  .content .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+  } 
+
+/* adjust css */
+.marquee {
+    width: 450px; /* Width of marquee "window" must match the width of p elements*/
+    margin: 0 auto;
+    background-color: #EC008C;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px #EC008C;
+}
+
+.marquee > div {
+  display: table-row;
+  white-space: nowrap;
+  padding-left: 100%; 
+  animation: marquee 20s linear infinite; /* Time must be adjusted based on total width of scrolled elements*/
+}
+
+.marquee > div p {
+  width: 450px; /* Width of p elements must match the width of marquee "window"*/
+  padding-left: 450px; /* Padding determines space between scrolled elements */
+  display: table-cell; 
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+@media only screen and (max-width: 768px) {
+    .btn-primary, .btn-secondary {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+}
