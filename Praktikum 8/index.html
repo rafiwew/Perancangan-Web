@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JavaScript</title>
+  </head>
+  <body>
+    <p>Your web content goes here</p>
+    <p>
+      <script>
+        // alert("Muhammad Rafi");
+        // window.alert("Rafi");
+        document.writeln("Printed by JavaScript\n");
+        document.writeln(document);
+        document.writeln("\n");
+        document.writeln(Math.sqrt(20));
+
+        console.log(1);
+        var variabel1 = "teks";
+        var n1, n2;
+        n1 = 5;
+        n2 = 15;
+        var sum = 5 + 5;
+
+        console.log(variabel1, sum);
+        !(1 == 2);
+
+        console.log(!(1 == 2));
+
+        for (var i = 0; i < 10; i++) {
+          console.log(i);
+        }
+
+        var color = "blue";
+        while (color == "blue") {
+          console.log("Color is still blue");
+          if (Math.random() > 0.5) {
+            color = "not blue";
+          }
+        }
+
+        cetakTeks(variabel1);
+
+        function cetakTeks(a) {
+          document.write("<p>" + a + "</p");
+        }
+
+        hasil = jumlah(n1, n2);
+        document.write("\n<p>" + hasil + "</p");
+
+        function jumlah(a, b) {
+          return a + b;
+        }
+
+        console.log(jumlah(n1, n2));
+
+        //
+        function modifyValue(a) {
+          document.write(a + "<br>");
+          myValue = "new value";
+          document.write(a + "<br>");
+        }
+
+        var value = "\nold value";
+        modifyValue(value);
+        document.write(myValue + "<br>");
+
+        //
+        var list = new Array(10);
+        list[0] = "list-1";
+
+        var list2 = ["kolak", "mendoan", "kurma"]; // literal
+
+        var lengthOfList = list.length;
+        document.write("Panjangnya ada: " + lengthOfList + "<br>");
+
+        //
+        var car = { color: "blue", numberOfDoors: 4, interior: "leather" };
+        document.write(car.color + "<br>");
+        car.description = function () {
+          return `color: ${color} car with ${numberOfDoors} doors and interior ${interior}`;
+        };
+      </script>
+    </p>
+  </body>
+</html>

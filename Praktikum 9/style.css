@@ -1,0 +1,52 @@
+.jumbotron {
+    padding: 6rem;
+    background-color: #7fffd4;
+  }
+  
+  #projects {
+    background-color: #ffe59d;
+  }
+  
+  .foot {
+    background-color: #4d4c7d;
+  }
+  
+  section {
+    padding-top: 4rem;
+  }
+  
+  hr {
+    width: 100px;
+    border-top: 3px solid darkseagreen;
+  }
+
+.card img {
+    opacity: 0.7;
+}
+
+.card img:hover {
+    opacity: 1.0;
+}
+
+p, a, h1, h2, label{
+    font-family: 'Poppins';
+}
+
+.foot p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.foot p a:hover {
+    color: #bfbfbf;
+}
+
+#confetti{
+	background: transparent;
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: -1;
+}

@@ -1,0 +1,11 @@
+Tambahan JS (JQuery)
+
+1. Pada navbar jika dihover, background color akan berubah warna.
+
+2. Jika elemen ikon & teks "Contact Me" diklik maka akan memunculkan formulir.
+
+3. Pada gambar profil, gambarnya akan selalu berganti setiap 2 detik sekali.
+
+4. Tambahan efek confeti pada background.
+
+Link demo website: https://j0303211088-mrafi-praktikum9.netlify.app/
