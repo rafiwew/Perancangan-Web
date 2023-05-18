@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AJAX Penjumlahan</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <h2>Penjumlahan Dua Bilangan</h2>
+    <input
+      type="number"
+      id="number1"
+      placeholder="Bilangan 1"
+      oninput="sumNumbers()" />
+    <input
+      type="number"
+      id="number2"
+      placeholder="Bilangan 2"
+      oninput="sumNumbers()" />
+    <p>Hasil: <span id="result"></span></p>
+
+    <script>
+      function sumNumbers() {
+        var number1 = document.getElementById("number1").value;
+        var number2 = document.getElementById("number2").value;
+
+        var data = {
+          number1: number1,
+          number2: number2,
+        };
+
+        $.ajax({
+          type: "POST",
+          url: "sum.json", // Ganti dengan URL atau nama file yang sesuai di server Anda
+          data: JSON.stringify(data),
+          contentType: "application/json",
+          dataType: "json",
+          success: function (response) {
+            document.getElementById("result").textContent = response.result;
+          },
+          error: function () {
+            alert("Terjadi kesalahan saat mengirim permintaan AJAX.");
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

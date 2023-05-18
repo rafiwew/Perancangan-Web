@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <h2>Let AJAX change this text (jQuery)</h2>
+      <button type="button" id="btn_tampil2"">Change Content</button>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#btn_tampil2").click(function () {
+          $.get("ajax_info.txt", function (data, status) {
+            $("#demo").html("<p>" + data + "</p>");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

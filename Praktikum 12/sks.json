@@ -1,0 +1,34 @@
+[
+    {
+        "_id": {
+            "$oid": "6461e302db36a59eced6fe5e"
+        },
+        "nim": "J0303211090",
+        "nama": "Ahmad Fauzi",
+        "usia": 21
+    },
+    {
+        "_id": {
+            "$oid": "6461e302db36a59eced6fe5f"
+        },
+        "nim": "J0303211091",
+        "nama": "Rina Anggraeni",
+        "usia": 19
+    },
+    {
+        "_id": {
+            "$oid": "6461e302db36a59eced6fe60"
+        },
+        "nim": "J0303211092",
+        "nama": "Budi Setiawan",
+        "usia": 22
+    },
+    {
+        "_id": {
+            "$oid": "6461e302db36a59eced6fe61"
+        },
+        "nim": "J0303211093",
+        "nama": "Sinta Dewi",
+        "usia": 20
+    }
+]
